@@ -21,7 +21,7 @@ const projectsData = [
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/LocalBinNotFound/keynatic-mall",
-        previewUrl: "404"
+        previewUrl: "https://github.com/LocalBinNotFound/keynatic-mall"
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const projectsData = [
         image: "/images/projects/3.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/LocalBinNotFound/not-just-bubble-sort",
-        previewUrl: "404"
+        previewUrl: "https://appetize.io/app/nssahhg45e7stiaxkkt4sgaqci?device=pixel7&osVersion=13.0"
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const projectsData = [
         image: "/images/projects/4.png",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/CS5520FeinbergSpring2024/group-a6-a6-group9",
-        previewUrl: "404"
+        previewUrl: "https://appetize.io/app/fe76ecng2fx43lbwnbcdimq7uy?device=pixel7&osVersion=13.0"
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const projectsData = [
         image: "/images/projects/5.png",
         tag: ["All", "Desktop"],
         gitUrl: "https://github.com/LocalBinNotFound/Image-Processing-Program",
-        previewUrl: "404"
+        previewUrl: "https://github.com/LocalBinNotFound/Image-Processing-Program/blob/main/README.md"
     },
 ]
 

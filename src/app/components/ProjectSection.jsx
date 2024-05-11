@@ -8,7 +8,7 @@ const projectsData = [
     {
         id: 1,
         title: "Road Trip Planner",
-        description: "An AI-powered road trip planner for road-tripping with furry friends",
+        description: "An AI-powered road trip planner for road-tripping with your beloved furry friends",
         image: "/images/projects/1.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/LocalBinNotFound/Road-Trip-Planner",
@@ -17,7 +17,7 @@ const projectsData = [
     {
         id: 2,
         title: "Keynatic Mall",
-        description: "An e-commerce application designed for custom keyboard and mice lovers",
+        description: "An e-commerce application with decoupled architecture designed for custom keyboard lovers",
         image: "/images/projects/2.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/LocalBinNotFound/keynatic-mall",
@@ -26,7 +26,7 @@ const projectsData = [
     {
         id: 3,
         title: "NotJustBubbleSort",
-        description: "Android mobile game made with Unity for beginners to learn algorithms",
+        description: "An Android mobile game made with Unity for beginners to learn algorithms and data structures",
         image: "/images/projects/3.png",
         tag: ["All", "Mobile", "Game"],
         gitUrl: "https://github.com/LocalBinNotFound/not-just-bubble-sort",

@@ -18,7 +18,7 @@ module.exports = {
     colors: {
       ...colors,
       primary: colors.green,
-      secondary: colors.yellow,
+      secondary: colors.blue,
       textColor: "#ADB7BE",
       borderColor: "#33353F",
       projectOverlayColor: "#181818",

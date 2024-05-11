@@ -28,7 +28,7 @@ const projectsData = [
         title: "NotJustBubbleSort",
         description: "An Android mobile game made with Unity for beginners to learn algorithms and data structures",
         image: "/images/projects/3.png",
-        tag: ["All", "Mobile", "Game"],
+        tag: ["All", "Mobile"],
         gitUrl: "https://github.com/LocalBinNotFound/not-just-bubble-sort",
         previewUrl: "404"
     },
@@ -90,11 +90,6 @@ const ProjectSection = () => {
                     onClick={handleTagChange}
                     name="Mobile"
                     isSelected={tag === "Mobile"}
-                />
-                <ProjectTag
-                    onClick={handleTagChange}
-                    name="Game"
-                    isSelected={tag === "Game"}
                 />
                 <ProjectTag
                     onClick={handleTagChange}

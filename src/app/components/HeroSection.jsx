@@ -32,7 +32,16 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                        I am a developer
+                        I am a dedicated Computer Science student at Northeastern University,
+                        pursuing a comprehensive understanding of the computer technologies.
+                        My academic journey began with a B.S. in Chemical Engineering & Materials
+                        Science and Engineering from UC Berkeley, a foundation that has greatly
+                        enriched my problem-solving skills. My transition to Computer Science was
+                        guided by several years of immersion in an industrial environment, where
+                        I actively engaged with programming tasks and gradually developed a deep
+                        passion for the field. This journey led me to a systematic study of Computer
+                        Science, where I'm committed to mastering the intricacies of software and
+                        full-stack development , and cutting-edge technologies.
                     </p>
                     <div>
                         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">
@@ -58,4 +67,4 @@ const HeroSection = () => {
         </section>)
 }
 
-export default HeroSection
+export default HeroSection;

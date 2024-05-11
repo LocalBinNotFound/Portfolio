@@ -19,7 +19,23 @@ module.exports = {
       ...colors,
       primary: colors.green,
       secondary: colors.yellow,
+      textColor: "#ADB7BE",
+      borderColor: "#33353F",
+      projectOverlayColor: "#181818",
+      inputFieldColor: "#18191E",
+      placeHolderColor: "#9CA2A9",
+      navBarColor: "#121212",
+
+      light: {
+        textColor: colors.gray[800],
+        borderColor: colors.gray[300],
+        projectOverlayColor: colors.white,
+        inputFieldColor: colors.white,
+        placeHolderColor: colors.gray[500],
+        navBarColor: colors.white,
+      }
     },
   },
   plugins: [],
+  darkMode: 'class',
 };

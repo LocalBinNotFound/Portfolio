@@ -50,20 +50,15 @@ const AboutSection = () => {
     return (
         <section id="about" className="text-white">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/images/profile.jpg" alt="profile image" width={500} height={500} />
+                <div className="pt-12"><Image src="/images/profile.jpg" alt="profile image" width={500} height={500} /></div>
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="pt-12 text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        I am a dedicated Computer Science student at Northeastern University,
-                        pursuing a comprehensive understanding of the computer technologies.
-                        My academic journey began with a B.S. in Chemical Engineering & Materials
-                        Science and Engineering from UC Berkeley, a foundation that has greatly
-                        enriched my problem-solving skills. My transition to Computer Science was
-                        guided by several years of immersion in an industrial environment, where
-                        I actively engaged with programming tasks and gradually developed a deep
-                        passion for the field. This journey led me to a systematic study of Computer
-                        Science, where I'm committed to mastering the intricacies of software and
-                        full-stack development , and cutting-edge technologies.
+                        A self-motivated and passionate programmer focusing on full stack and mobile development.
+                        My academic journey began with a B.S. in the Engineering discipline at UC Berkeley, a
+                        foundation that has greatly enriched my technical skills. With upcoming graduation from
+                        Northeastern University with a M.S. in Computer Science, I am committed to making awesome
+                        software that people will enjoy using daily.
                     </p>
                     <div className="flex flex-row mt-8">
                         <TabButton

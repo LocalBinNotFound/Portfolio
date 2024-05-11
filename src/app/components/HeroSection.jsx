@@ -22,6 +22,7 @@ const HeroSection = () => {
                     <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
                         <span
                             className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                             Hello, I'm{ " " }
                         </span>
                         <br></br>
@@ -38,6 +39,7 @@ const HeroSection = () => {
                     <p className="text-textColor text-base sm:text-lg mb-3 lg:text-xl">
                         Crafting innovative and scalable solutions with over 2 years in software development.<br/>
                         Dedicated to delivering high-quality, user-centered web and mobile applications.<br/>
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Ready to transform ideas into reality? Let's make something amazing!<br/>
                     </p>
                     <div>

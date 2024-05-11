@@ -38,6 +38,7 @@ const EmailSection = () => {
         <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
 
             <div className="z-9">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <h5 className="text-2xl font-bold text-white my-2">Let's Connect</h5>
                 <p className="text-textColor mb-4 max-w-md">
                     { " " }

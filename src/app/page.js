@@ -1,8 +1,9 @@
-import Image from "next/image";
 import HeroSection from "@/app/components/HeroSection";
 import AboutSection from "@/app/components/AboutSection";
 import NavBar from "@/app/components/NavBar";
 import ProjectSection from "@/app/components/ProjectSection";
+import EmailSection from "@/app/components/EmailSection";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
             <HeroSection />
             <AboutSection />
             <ProjectSection />
+            <EmailSection />
         </div>
+        <Footer />
      </main>
   );
 }

@@ -5,17 +5,21 @@ import ProjectSection from "@/app/components/ProjectSection";
 import EmailSection from "@/app/components/EmailSection";
 import Footer from "@/app/components/Footer";
 import AchievementsSection from "@/app/components/AchievementsSection";
+import EducationSection from "@/app/components/EducationSection";
+import ExperienceSection from "@/app/components/ExperienceSection";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-black">
         <NavBar />
         <div className="container mt-24 mx-auto px-12 py-4">
-            <section><HeroSection /></section>
-            <section><AchievementsSection/></section>
-            <section><AboutSection/></section>
-            <section><ProjectSection/></section>
-            <section><EmailSection/></section>
+            <HeroSection />
+            <AchievementsSection/>
+            <AboutSection/>
+            <EducationSection />
+            <ExperienceSection />
+            <ProjectSection/>
+            <EmailSection/>
         </div>
         <Footer />
      </main>

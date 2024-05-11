@@ -38,12 +38,12 @@ const EmailSection = () => {
         <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
 
             <div className="z-9">
-                <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+                <h5 className="text-2xl font-bold text-white my-2">Let's Connect</h5>
                 <p className="text-textColor mb-4 max-w-md">
                     { " " }
-                    I am currently looking for new opportunities, my inbox is always open.
-                    Whether you have a question or just want to say hi, I'll try my best
-                    to get back to you!
+                    I am looking for new career opportunities in software development, I am eager
+                    to bring my skills to an innovative and dynamic team. If you are looking for a
+                    dedicated and results-driven developer, please do not hesitate to reach out.
                 </p>
                 <div className="contact-icon socials flex flex-row gap-5">
                     <Link href="https://github.com/LocalBinNotFound">
@@ -88,7 +88,7 @@ const EmailSection = () => {
                             name="subject"
                             required
                             className="bg-inputFieldColor border border-borderColor placeholder-placeHolderColor text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                            placeholder="Say hi to me!"
+                            placeholder="email subject"
                         />
                     </div>
                     <div className="mb-6">

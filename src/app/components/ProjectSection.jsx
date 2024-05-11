@@ -8,29 +8,47 @@ const projectsData = [
     {
         id: 1,
         title: "Road Trip Planner",
-        description: "An AI-enabled road trip planner",
+        description: "An AI-powered road trip planner for road-tripping with furry friends",
         image: "/images/projects/1.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://github.com/LocalBinNotFound/Road-Trip-Planner",
+        previewUrl: "https://road-trip-planner-one.vercel.app/"
     },
     {
         id: 2,
-        title: "NotJustBubbleSort",
-        description: "Mobile Game for learning algorithms",
+        title: "Keynatic Mall",
+        description: "An e-commerce application designed for custom keyboard and mice lovers",
         image: "/images/projects/2.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        previewUrl: "/"
+        tag: ["All", "Web"],
+        gitUrl: "https://github.com/LocalBinNotFound/keynatic-mall",
+        previewUrl: "404"
     },
     {
         id: 3,
         title: "NotJustBubbleSort",
-        description: "Mobile Game for learning algorithms",
-        image: "/images/projects/2.png",
+        description: "Android mobile game made with Unity for beginners to learn algorithms",
+        image: "/images/projects/3.png",
+        tag: ["All", "Mobile", "Game"],
+        gitUrl: "https://github.com/LocalBinNotFound/not-just-bubble-sort",
+        previewUrl: "404"
+    },
+    {
+        id: 4,
+        title: "Artwork Search",
+        description: "A mini utility to search for artwork from Art Institute of Chicago",
+        image: "/images/projects/4.png",
         tag: ["All", "Mobile"],
-        gitUrl: "/",
-        previewUrl: "/"
+        gitUrl: "https://github.com/CS5520FeinbergSpring2024/group-a6-a6-group9",
+        previewUrl: "404"
+    },
+    {
+        id: 5,
+        title: "Image Wicked",
+        description: "An image utility with GUI to perform pixel manipulations, written in C",
+        image: "/images/projects/5.png",
+        tag: ["All", "Desktop"],
+        gitUrl: "https://github.com/LocalBinNotFound/Image-Processing-Program",
+        previewUrl: "404"
     },
 ]
 
@@ -72,6 +90,16 @@ const ProjectSection = () => {
                     onClick={handleTagChange}
                     name="Mobile"
                     isSelected={tag === "Mobile"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Game"
+                    isSelected={tag === "Game"}
+                />
+                <ProjectTag
+                    onClick={handleTagChange}
+                    name="Desktop"
+                    isSelected={tag === "Desktop"}
                 />
             </div>
             <ul  ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

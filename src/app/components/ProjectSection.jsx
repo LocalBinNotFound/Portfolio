@@ -28,9 +28,10 @@ const projectsData = [
         title: "NotJustBubbleSort",
         description: "An Android mobile game made with Unity for beginners to learn algorithms and data structures",
         image: "/images/projects/3.png",
-        tag: ["All", "Mobile"],
+        tag: ["All", "Mobile", "Web"],
         gitUrl: "https://github.com/LocalBinNotFound/not-just-bubble-sort",
-        previewUrl: "https://appetize.io/app/nssahhg45e7stiaxkkt4sgaqci?device=pixel7&osVersion=13.0"
+        previewUrl: "https://appetize.io/app/nssahhg45e7stiaxkkt4sgaqci?device=pixel7&osVersion=13.0",
+        previewUrlWeb: "https://junjiefang1996.itch.io/notjustbubblesort"
     },
     {
         id: 4,
@@ -113,6 +114,7 @@ const ProjectSection = () => {
                             imgUrl={ project.image }
                             gitUrl={ project.gitUrl }
                             previewUrl={ project.previewUrl }
+                            previewUrlWeb={project.previewUrlWeb}
                         />
                     </motion.li>
                 ))}

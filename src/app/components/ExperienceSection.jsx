@@ -29,17 +29,25 @@ const ExperienceSection = () => {
             <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
-                variants={containerVariants}
+                viewport={ {once : true} }
+                variants={ containerVariants }
                 className="flex flex-col gap-8"
             >
-                <motion.div variants={itemVariants} className="bg-navBarColor p-6 rounded-lg shadow-xl">
+                <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
+                    <h3 className="text-2xl font-semibold">Software Engineer, Integrated Systems</h3>
+                    <p className="text-primary-600 text-lg mb-3">Picarro Inc.</p>
+                    <ul className="list-none pl-5 text-gray-300 max-w-5xl">
+                        <li className="mb-2">Backend support for system integration.
+                        </li>
+                    </ul>
+                    <span className="block mt-2 text-primary-700">July 2024 - Present</span>
+                </motion.div>
+                <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
                     <h3 className="text-2xl font-semibold">Teaching Assistant</h3>
                     <p className="text-primary-600 text-lg mb-3">Northeastern University</p>
                     <ul className="list-none pl-5 text-gray-300 max-w-5xl">
                         <li className="mb-2">Collaborated with faculty to integrate interactive programming concepts
-                            into
-                            graduate-level courses, boosting computational thinking and engagement among students
+                            into graduate-level courses, boosting computational thinking and engagement among students.
                         </li>
                         <li className="mb-2">Lead the development and implementation of programming tutorials and
                             workshops, reinforcing practical coding skills.
@@ -48,7 +56,7 @@ const ExperienceSection = () => {
                             to evaluate student code submissions efficiently.
                         </li>
                     </ul>
-                    <span className="block mt-2 text-primary-700">August 2023 - Present</span>
+                    <span className="block mt-2 text-primary-700">August 2023 - May 2024</span>
                 </motion.div>
                 <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
                     <h3 className="text-2xl font-semibold">Research & Development Engineer</h3>

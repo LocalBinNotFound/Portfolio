@@ -28,7 +28,7 @@ const HeroSection = () => {
                         <br></br>
                         <TypeAnimation
                             sequence={ [
-                                'Junjie', 1000, 'Software Engineer', 1000, 'Full Stack Engineer', 1000, 'Mobile Engineer', 1000, 'Tech Enthusiast', 1000,
+                                'Junjie', 1000, 'Software Engineer', 1000, 'Backend Engineer', 1000, 'Tech Enthusiast', 1000,
                             ] }
                             wrapper="span"
                             cursor={ true }
@@ -37,8 +37,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-textColor text-base sm:text-lg mb-3 lg:text-xl">
-                        Crafting innovative and scalable solutions with over 2 years in software development.<br/>
-                        Dedicated to delivering high-quality, user-centered web and mobile applications.<br/>
+                        Software Engineer, Integrated Systems at Picarro Inc.<br/>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Ready to transform ideas into reality? Let's make something amazing!<br/>
                     </p>

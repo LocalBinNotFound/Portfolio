@@ -72,7 +72,7 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="pt-12 text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        A dedicated and driven software developer specializing in full stack and mobile development.
+                        A dedicated and driven software developer specializing in full stack development.
                         My academic journey began with B.S. in Engineering at UC Berkeley, providing me with a robust
                         foundation in analytical thinking and problem-solving skills. With a unique blend of engineering
                         expertise and programming proficiency, I am eager to contribute to projects that are not only

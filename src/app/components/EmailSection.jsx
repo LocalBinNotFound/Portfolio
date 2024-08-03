@@ -42,9 +42,8 @@ const EmailSection = () => {
                 <h5 className="text-2xl font-bold text-white my-2">Let's Connect</h5>
                 <p className="text-textColor mb-4 max-w-md">
                     { " " }
-                    I am looking for new career opportunities in software development, I am eager
-                    to bring my skills to an innovative and dynamic team. If you are looking for a
-                    dedicated and results-driven developer, please do not hesitate to reach out.
+                    I am always welcome to new ideas. If you have ideas, let me know by
+                    sending an email!
                 </p>
                 <div className="contact-icon socials flex flex-row gap-5">
                     <Link href="https://github.com/LocalBinNotFound">

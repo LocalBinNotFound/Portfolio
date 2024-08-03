@@ -37,7 +37,7 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-textColor text-base sm:text-lg mb-3 lg:text-xl">
-                        Software Engineer, Integrated Systems at Picarro Inc.<br/>
+                        Software Engineer at Picarro Inc.<br/>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Ready to transform ideas into reality? Let's make something amazing!<br/>
                     </p>

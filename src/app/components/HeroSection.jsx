@@ -37,22 +37,21 @@ const HeroSection = () => {
                         />
                     </h1>
                     <p className="text-textColor text-base sm:text-lg mb-3 lg:text-xl">
-                        Software Engineer at Picarro Inc.<br/>
+                        System Integration Software Engineer at Picarro Inc.<br/>
                         {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Ready to transform ideas into reality? Let's make something amazing!<br/>
                     </p>
-                    <div>
+                    <div className="flex flex-col sm:flex-row gap-4">
                         <button
                             onClick={scrollToContact}
-                            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
+                            className="btn-modern bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:shadow-strong text-white">
                             Hire Me
                         </button>
-                        <button
-                            className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+                        <button className="btn-modern glass hover:shadow-strong text-white group">
                             <a
-                                href="https://drive.google.com/uc?export=download&id=1aFlLDwOIngWI_7Zb1WiSrzS5209DZH6D"
+                                href="https://drive.google.com/uc?export=download&id=1ev3jjCiIxjThInFqfjZmuY6_oLkBWvf0"
                                 download="Junjie_Fang_Resume.pdf"
-                                className="block bg-navBarColor hover:bg-slate-800 rounded-full px-5 py-2">
+                                className="block">
                                 Download Resumé
                             </a>
                         </button>
@@ -61,14 +60,17 @@ const HeroSection = () => {
                 <motion.div initial={ {opacity : 0, scale : 0.5} }
                             animate={ {opacity : 1, scale : 1} }
                             transition={ {duration : 0.5} } className="col-span-4 place-self-center mt-4 lg:mt-0">
-                    <div className="rounded-full bg-projectOverlayColor w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-                        <Image
-                            src="/images/hero-image.png"
-                            alt="hero image"
-                            className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={ 300 }
-                            height={ 300 }
-                        />
+                    <div className="relative group">
+                        <div className="rounded-full bg-gradient-to-br from-primary-500/20 to-secondary-500/20 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative glass shadow-strong">
+                            <Image
+                                src="/images/hero-image.png"
+                                alt="hero image"
+                                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 transition-transform duration-500 group-hover:scale-110"
+                                width={ 300 }
+                                height={ 300 }
+                            />
+                        </div>
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/30 to-secondary-500/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                     </div>
                 </motion.div>
             </div>

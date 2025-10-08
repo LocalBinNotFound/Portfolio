@@ -33,18 +33,42 @@ const ExperienceSection = () => {
                 variants={ containerVariants }
                 className="flex flex-col gap-8"
             >
-                <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
-                    <h3 className="text-2xl font-semibold">Software Engineer, Integrated Systems</h3>
-                    <p className="text-primary-600 text-lg mb-3">Picarro Inc.</p>
+                <motion.div variants={ itemVariants } className="glass p-6 rounded-lg shadow-strong hover:shadow-strong transition-all duration-300 hover:scale-105">
+                    <h3 className="text-2xl font-semibold gradient-text">Software Engineer, Integrated Systems</h3>
+                    <p className="text-primary-400 text-lg mb-3 font-medium">Picarro Inc.</p>
                     <ul className="list-none pl-5 text-gray-300 max-w-5xl">
-                        <li className="mb-2">Backend support for system integration.
+                        <li className="mb-2">Implemented integrated system solutions to embed Picarro’s patented
+                            CRDS analyzers into 10+ industrial ecosystem product line, enabling automated environmental
+                            monitoring and control across semiconductor fabs, refineries, workplace safety, and other
+                            critical applications.
+                        </li>
+                        <li className="mb-2">
+                            Lead the product development of Mobile (Vehicular) VOC Detection from concept to early
+                            demo leveraging FastAPI as Microservices, Docker, React, PostgreSQL,
+                            coordinated 5+ cross-functional teams for system design, product development while
+                            actively maturing it into a shippable product.
+                        </li>
+                        <li className="mb-2">
+                            Contributed to Picarro’s existing core/edge microservice architecture:
+                            <ul className="list-none pl-5 text-gray-300 max-w-5xl">
+                                <li className="mb-2">
+                                    Core: Core contributor to system orchestration, device integration, and service
+                                    configuration (CRUD) using Docker; redesigned core algorithms to reduce latency
+                                    and increase throughput, resulting in a 40% improvement in runtime performance;
+                                    maintained CI/CD pipelines with Jenkins for software deployment.
+                                </li>
+                                <li className="mb-2">
+                                    Edge: Handled data collection, monitoring, and real-time communication via gRPC,
+                                    WebSocket, ZeroMQ, and Kafka.
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-                    <span className="block mt-2 text-primary-700">July 2024 - Present</span>
+                    <span className="block mt-4 text-primary-400 font-medium text-sm uppercase tracking-wider">July 2024 - Present</span>
                 </motion.div>
-                <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
-                    <h3 className="text-2xl font-semibold">Teaching Assistant</h3>
-                    <p className="text-primary-600 text-lg mb-3">Northeastern University</p>
+                <motion.div variants={ itemVariants } className="glass p-6 rounded-lg shadow-strong hover:shadow-strong transition-all duration-300 hover:scale-105">
+                    <h3 className="text-2xl font-semibold gradient-text">Teaching Assistant</h3>
+                    <p className="text-primary-400 text-lg mb-3 font-medium">Northeastern University</p>
                     <ul className="list-none pl-5 text-gray-300 max-w-5xl">
                         <li className="mb-2">Collaborated with faculty to integrate interactive programming concepts
                             into graduate-level courses, boosting computational thinking and engagement among students.
@@ -56,11 +80,11 @@ const ExperienceSection = () => {
                             to evaluate student code submissions efficiently.
                         </li>
                     </ul>
-                    <span className="block mt-2 text-primary-700">August 2023 - May 2024</span>
+                    <span className="block mt-4 text-primary-400 font-medium text-sm uppercase tracking-wider">August 2023 - May 2024</span>
                 </motion.div>
-                <motion.div variants={ itemVariants } className="bg-navBarColor p-6 rounded-lg shadow-xl">
-                    <h3 className="text-2xl font-semibold">Research & Development Engineer</h3>
-                    <p className="text-primary-600 text-lg  mb-3">Enovix Corporation</p>
+                <motion.div variants={ itemVariants } className="glass p-6 rounded-lg shadow-strong hover:shadow-strong transition-all duration-300 hover:scale-105">
+                    <h3 className="text-2xl font-semibold gradient-text">Research & Development Engineer</h3>
+                    <p className="text-primary-400 text-lg mb-3 font-medium">Enovix Corporation</p>
                     <ul className="list-none pl-5 text-gray-300 max-w-5xl">
                         <li className="mb-2">Developed and maintained Python automation scripts, leveraging NumPy
                             and Pandas, to streamline research proposal evaluations and prioritize daily tasks,
@@ -75,7 +99,7 @@ const ExperienceSection = () => {
                             product design and manufacturing process refinement.
                         </li>
                     </ul>
-                    <span className="block mt-2 text-primary-700">January 2022 - January 2023</span>
+                    <span className="block mt-4 text-primary-400 font-medium text-sm uppercase tracking-wider">January 2022 - January 2023</span>
                 </motion.div>
             </motion.div>
         </section>);

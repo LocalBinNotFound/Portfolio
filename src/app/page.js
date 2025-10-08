@@ -7,6 +7,7 @@ import Footer from "@/app/components/Footer";
 import AchievementsSection from "@/app/components/AchievementsSection";
 import EducationSection from "@/app/components/EducationSection";
 import ExperienceSection from "@/app/components/ExperienceSection";
+import ChatWidget from "@/app/components/ChatWidget";
 import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
             <EmailSection/>
         </div>
         <Footer />
+        <ChatWidget />
         <Analytics />
      </main>
   );

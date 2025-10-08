@@ -2,61 +2,53 @@
 import React, { useState, useTransition } from 'react';
 import Image from "next/image";
 import TabButton from "@/app/components/TabButton";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
     {
         title: "Languages",
         id: "languages",
-        content: (<ul className="list-disc pl-2">
-            <li>JavaScript</li>
-            <li>MATLAB</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C/C++</li>
-            <li>C#</li>
-            <li>SQL</li>
-            <li>R</li>
-        </ul>)
+        content: (
+            <div className="flex flex-wrap gap-2">
+                {["JavaScript", "Python", "MicroPython", "Java", "C/C++", "C#", "Go"].map((skill, index) => (
+                    <motion.span 
+                        key={skill} 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                        className="glass text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-soft hover:scale-105 transition-all duration-300 cursor-default"
+                    >
+                        {skill}
+                    </motion.span>
+                ))}
+            </div>
+        )
     },
     {
         title: "Tools",
         id: "tools",
-        content: (<ul className="list-disc pl-2">
-            <li>Unity Game Engine</li>
-            <li>Android Studio</li>
-            <li>Atlassian Jira</li>
-            <li>NoSQL Database</li>
-            <li>GDB Debugger</li>
-            <li>Postman</li>
-            <li>PyTorch</li>
-            <li>JUnit</li>
-            <li>SQLite</li>
-            <li>MySQL</li>
-            <li>Unix</li>
-            <li>Git</li>
-        </ul>)
-    }, {
-        title : "skills", id : "skills", content: (<ul className="list-disc pl-2">
-            <li>RESTful API</li>
-            <li>Spring Boot</li>
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Vue.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>Redis</li>
-            <li>MyBatis</li>
-            <li>Docker</li>
-            <li>AWS S3</li>
-            <li>Azure</li>
-
-        </ul>)
+        content: (
+            <div className="flex flex-wrap gap-2">
+                {["Unity Game Engine", "Android Studio", "Docker", "Postman", "PyTorch", "Jenkins", "MySQL", "Linux/Unix", 
+                "Git", "RESTful API", "Protobuf/gRPC", "Spring Boot", "React.js", "Next.js", "Node.js", "MongoDB", "PostgreSQL", 
+                "Redis", "AWS S3", "FastAPI", "Microservices", "Kubernetes", "CI/CD"].map((skill, index) => (
+                    <motion.span 
+                        key={skill} 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                        className="glass text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-soft hover:scale-105 transition-all duration-300 cursor-default"
+                    >
+                        {skill}
+                    </motion.span>
+                ))}
+            </div>
+        )
     },
 ]
 
 const AboutSection = () => {
-    const [tab, setTab] = useState("skills");
+    const [tab, setTab] = useState("languages");
     const [isPending, startTransition] = useTransition();
 
     const handleTabChange = (id) => {
@@ -72,11 +64,12 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="pt-12 text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        A dedicated and driven software developer specializing in full stack development.
-                        My academic journey began with B.S. in Engineering at UC Berkeley, providing me with a robust
-                        foundation in analytical thinking and problem-solving skills. With a unique blend of engineering
-                        expertise and programming proficiency, I am eager to contribute to projects that are not only
-                        challenging but also push the boundaries of technology.
+                        A passionate Software Engineer specializing in system level programming and full-stack development, 
+                        currently driving innovation at Picarro Inc. where I lead the development of mobile VOC detection 
+                        systems and contribute to core microservice architectures. With a M.S. in Computer Science from 
+                        Northeastern University I bring a unique combination of analytical thinking, technical expertise,
+                         and collaborative leadership to every project. I am passionate about building scalable solutions 
+                         that solve real-world problems.
                     </p>
                     <div className="flex flex-row mt-8">
                         <TabButton
@@ -90,12 +83,6 @@ const AboutSection = () => {
                             active = {tab === "tools"}
                         >
                             Tools
-                        </TabButton>
-                        <TabButton
-                            selectTab={() => handleTabChange("skills")}
-                            active = {tab === "skills"}
-                        >
-                            Skills
                         </TabButton>
                     </div>
                     <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>

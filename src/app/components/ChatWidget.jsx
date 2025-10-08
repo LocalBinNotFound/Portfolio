@@ -114,7 +114,7 @@ const ChatWidget = () => {
             const apiKey = process.env.NEXT_PUBLIC_HUGGINGFACE_API_KEY || process.env.NEXT_PUBLIC_OPENAI_API_KEY;
             
             if (!apiKey) {
-                throw new Error('No API key configured');
+                return getFallbackResponse(userMessage);
             }
 
             let response;
@@ -295,7 +295,7 @@ const ChatWidget = () => {
                                         <div className="flex items-center space-x-2">
                                             <div className={`w-2 h-2 rounded-full ${isConfigured ? 'bg-green-400' : 'bg-red-400'}`}></div>
                                             <p className="text-xs text-gray-300 truncate">
-                                                {isConfigured ? 'Online' : 'API Key Required'}
+                                                {isConfigured ? 'Online' : 'Offline'}
                                             </p>
                                         </div>
                                     </div>
@@ -303,30 +303,7 @@ const ChatWidget = () => {
                             </div>
                         </div>
 
-                        {!isConfigured ? (
-                            /* API Key Setup */
-                            <div className="p-4">
-                                <div className="mb-4">
-                                    <h4 className="text-white font-semibold mb-2">API Key Required</h4>
-                                    <p className="text-sm text-gray-300 mb-4">
-                                        Add your API key to the environment variables to enable AI responses.
-                                    </p>
-                                </div>
-                                <div className="space-y-3">
-                                    <div className="glass p-3 rounded-lg">
-                                        <p className="text-sm text-gray-300 mb-2">Add to your <code className="text-primary-400">.env.local</code> file:</p>
-                                        <code className="text-xs text-gray-400 block">
-                                            NEXT_PUBLIC_HUGGINGFACE_API_KEY=hf_your_token_here
-                                        </code>
-                                    </div>
-                                    <div className="text-xs text-gray-400 space-y-1">
-                                        <p>• Get free token from <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:underline">Hugging Face</a></p>
-                                        <p>• 30,000 free requests per month</p>
-                                        <p>• Restart your dev server after adding the key</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ) : (
+                        {!isConfigured ? (<>{}{}</>) : (
                             <>
                                 {/* Messages Area */}
                                 <div className="flex-1 p-4 overflow-y-auto space-y-4 chat-scroll min-h-0 bg-gray-800/30">
